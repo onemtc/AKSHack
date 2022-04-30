@@ -8,7 +8,7 @@ The first step in our journey will be to take our application and package it as 
 
 ## Description
 
-- If you haven't done so already, clone the git repo **https://github.dev/onemtc/AKSHack**.  You will find the source code for `content-web` and `content-api` in the folder **Student/Resources/Challenge 2**.  Review how the provided Dockerfiles correspond to each of these applications.
+- If you haven't done so already, clone the git repo `https://github.com/onemtc/AKSHack.git`.  You will find the source code for `content-web` and `content-api` in the folder **Student/Resources/Challenge 2**.  Review how the provided Dockerfiles correspond to each of these applications.
 - Deploy an Azure Container Registry (ACR)
 - Ensure your ACR has proper permissions and credentials configured
 - Use the cloud-based container image building feature of ACR Tasks to build and store images for `content-web` and `content-api`
@@ -20,3 +20,7 @@ The first step in our journey will be to take our application and package it as 
 1. You have provisioned a new Azure Container Registry
 1. You have built and deployed your container images to the registry.
 2. You can log into the registry and see all images.
+
+## Addtional Reading
+- [Azure Container Registry Tasks](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-tasks-overview)
+- [Tutorial - Build an image with ACR Tasks](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-quick-task)
