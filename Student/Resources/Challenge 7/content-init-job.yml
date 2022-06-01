@@ -3,11 +3,12 @@ kind: Job
 metadata:
   name: content-init
 spec:
+  ttlSecondsAfterFinished: 60
   template:
     spec:
       containers:
       - name: content-init
-        image: whatthehackmsft/content-init
+        image: ghcr.io/onemtc/akshack/content-init:latest
         env:
           - name: MONGODB_CONNECTION
             value: mongodb://mongodb:27017/contentdb
