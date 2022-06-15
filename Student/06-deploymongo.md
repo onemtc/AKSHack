@@ -10,7 +10,7 @@ At your daily standup, you heard that your developers will be refactoring the ap
 
 In this challenge we'll be installing MongoDB into our cluster.
 
-- Create a deployment for MongoDB. Use the official MongoDB container image from https://hub.docker.com/_/mongo
+- Create a manifest for MongoDB. Use the official MongoDB container image from https://hub.docker.com/_/mongo
 - MongoDB is a _database_, and thus rather than using a **Deployment**, it's best to use a **Stateful Set** object to deploy it to Kubernetes.
 - Confirm it is running with:
 	- `kubectl exec -it <mongo pod name> -- mongo "--version"`

@@ -11,7 +11,7 @@ Your development team has released V2 of their application.  It's time to update
 In this challenge you'll be deploying a v2 of the FabMedical application to your Kubernetes cluster. We're going to do this using two different update strategies: "Rolling Update" and "Blue/Green Deployment".
 
 ### Update the app and load data
-- We have staged an updated version of the app on Docker Hub with id and version:
+- We have staged an updated version of the app on GitHub with id and version:
 	- **ghcr.io/onemtc/akshack/content-web:v2**
 	- **ghcr.io/onemtc/akshack/content-api:v2**
 - **NOTE:** If you are interested, you can find v2 of the source code in your Challenge 7 Resources folder.
@@ -27,7 +27,7 @@ In this challenge you'll be deploying a v2 of the FabMedical application to your
 - Perform a rolling update of content-web on your cluster to the v2 version of content-web.  You will need to edit your deployment to incorporate the following:
   - You’ll be doing this from the command-line with a kubectl command (remember, Kubernetes docs are your friend!)  _Note that you don't shouldn't be updating any yaml in this step._
   - With kubectl and its watch feature you should be able to see new pods with the new version come online and the old pods terminate.
-  - At the same time, hit the front page to see when you’re on the new version by refreshing constantly until you see the conference dates updated to 2019. 
+  - At the same time, hit the front page to see when you’re on the new version by refreshing constantly until you see the conference dates updated to 2021. 
 - Now we are going to roll back this update.
 	- Again, this is done from the command-line using a (different) kubectl command.
 	- Confirm that we are back to the original version of the app by checking that the conference dates are back to 2017.

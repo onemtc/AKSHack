@@ -14,21 +14,21 @@ In this challenge we will cover scale and resiliency from multiple aspects. We'l
 
   **`az aks nodepool scale --resource-group wth-rg01-poc --cluster-name wth-aks01-poc --name nodepool1 --node-count 1`**
 
-* Next, scale the **Web** app to 2 instances
+* Next, scale the **Web** app to 2 replicas
 	- This should be done by modifying the YAML file for the Web app and re-deploying it 
-*  Now, scale the **API** app to 4 instances, but this time, use the kubectl command to update the number of instances.  
+*  Now, scale the **API** app to 4 replicas, but this time, use the kubectl command to update the number of replicas.  
 * Watch events using kubectl with its special watch option.
-   - You will find an error occurs because the cluster does not have enough resources to support that many instances.
+   - You will find an error occurs because the cluster does not have enough resources to support that many replicas.
    - There are two ways to fix this problem: 
      1. Increase the size of your cluster, either manually, or by enabling the cluster autoscaler.
      2. Decrease the resources needed by the deployments
   - For this exercise, we want you to adjust the resources used by your deployments.
-* To fully deploy the application, you will need 4 instances of the API app running and 2 instances of the Web app. 
+* To fully deploy the application, you will need 4 replicas of the API app running and 2 replicas of the Web app. 
 	- Hint: If you fixed the issue above correctly (look at pod resource request!), you should be able to do this with the resources of your original cluster.
 * When your cluster is fully deployed, browse to the `/stats.html` page of the web application.
-	- Keep refreshing to see the API app’s host name keep changing between the deployed instances.
+	- Keep refreshing to see the API app’s host name keep changing between the deployed replicas.
 * Scale the API app back down to 1, and immediately keep refreshing the `/stats.html` page.
-	- You will notice that without any downtime it now directs traffic only to the single instance left.
+	- You will notice that without any downtime it now directs traffic only to the single replica left.
 
 ## Success Criteria
 
