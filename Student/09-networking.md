@@ -46,4 +46,6 @@ Just like in part 1, you will now add a metadata annotation to the ingress contr
 _Make sure you review these! (Hint Hint)_
 * [Apply a DNS label to a service](https://docs.microsoft.com/en-us/azure/aks/static-ip#apply-a-dns-label-to-the-service)
 * [Create a basic ingress controller](https://docs.microsoft.com/en-us/azure/aks/ingress-basic)
+* [Kubernetes Ingress Resource overview](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+* [Example mimimal ingress resource](https://kubernetes.io/docs/concepts/services-networking/ingress/#the-ingress-resource)
 * [Ingress controller DNS labels](https://docs.microsoft.com/en-us/azure/aks/ingress-static-ip)

@@ -3,7 +3,8 @@ RUN apk -U add curl
 WORKDIR /usr/src/app
 EXPOSE 3001
 
-FROM node:argon AS build
+# FROM node:argon AS build
+FROM node:16.5.0-alpine AS build
 WORKDIR /usr/src/app
 
 # Install app dependencies
